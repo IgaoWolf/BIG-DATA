@@ -5,7 +5,7 @@ Relation:     supermarket
 Instances:    4627
 Attributes:   217
               [list of attributes omitted]
-Test mode:    10-fold cross-validation
+Test mode:    evaluate on training data
 
 === Classifier model (full training set) ===
 
@@ -18,9 +18,12 @@ Number of Leaves  : 	1
 Size of the tree : 	1
 
 
-Time taken to build model: 0.04 seconds
+Time taken to build model: 0.01 seconds
 
-=== Stratified cross-validation ===
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.04 seconds
+
 === Summary ===
 
 Correctly Classified Instances        2948               63.713  %
@@ -28,16 +31,16 @@ Incorrectly Classified Instances      1679               36.287  %
 Kappa statistic                          0     
 Mean absolute error                      0.4624
 Root mean squared error                  0.4808
-Relative absolute error                 99.9961 %
+Relative absolute error                 99.9965 %
 Root relative squared error            100      %
 Total Number of Instances             4627     
 
 === Detailed Accuracy By Class ===
 
                  TP Rate  FP Rate  Precision  Recall   F-Measure  MCC      ROC Area  PRC Area  Class
-                 1,000    1,000    0,637      1,000    0,778      ?        0,499     0,637     low
-                 0,000    0,000    ?          0,000    ?          ?        0,499     0,363     high
-Weighted Avg.    0,637    0,637    ?          0,637    ?          ?        0,499     0,537     
+                 1,000    1,000    0,637      1,000    0,778      ?        0,500     0,637     low
+                 0,000    0,000    ?          0,000    ?          ?        0,500     0,363     high
+Weighted Avg.    0,637    0,637    ?          0,637    ?          ?        0,500     0,538     
 
 === Confusion Matrix ===
 
